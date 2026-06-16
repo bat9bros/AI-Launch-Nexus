@@ -1,0 +1,147 @@
+.hero {
+    position: relative;
+    isolation: isolate;
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    padding-bottom: 0;
+    background-image: url("img/фон2.png"), url("img/фон1.png");
+    background-size: 25px 25px, cover;
+    background-repeat: repeat, no-repeat;
+    background-position: center, center;
+}
+
+.creator {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 60px 55px 40px;
+    margin-bottom: 0;
+}
+
+.creator-image {
+    width: 430px;
+    height: 430px;
+    border-radius: 28px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.creator-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.creator-content { max-width: 720px; }
+
+.creator-content p {
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.08;
+}
+
+.creator-content h2 {
+    color: white;
+    font-size: 44px;
+    font-weight: 800;
+    margin-top: 40px;
+}
+
+.creator-stats {
+    padding: 0 55px 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.stat-card {
+    padding: 28px 24px;
+    border-radius: 18px;
+    background: linear-gradient(145deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+    border: 1px solid rgba(255,255,255,0.07);
+}
+
+.stat-card .stat-num {
+    color: white;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.stat-card .stat-label {
+    color: rgba(255,255,255,0.55);
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.3;
+    display: block;
+}
+
+.creator-contacts {
+    padding: 0 55px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.creator-contacts h3 {
+    color: white;
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.contact-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 24px;
+    border-radius: 14px;
+    background: linear-gradient(145deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+    border: 1px solid rgba(255,255,255,0.08);
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.contact-item:hover {
+    background: rgba(255,255,255,0.1);
+    border-color: rgba(255,255,255,0.2);
+}
+
+.contact-item svg {
+    opacity: 0.7;
+    flex-shrink: 0;
+}
+
+.creator-support-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    width: 280px;
+    border-radius: 999px;
+    border: 1px solid rgba(255,255,255,0.3);
+    background: transparent;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+    font-family: "Machina", sans-serif;
+    margin-top: 8px;
+}
+
+.creator-support-btn:hover { background: white; color: black; }
